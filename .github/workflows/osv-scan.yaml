@@ -11,13 +11,7 @@
 
 name: OSV-Scanner
 
-on:
-  pull_request:
-    branches: [ $default-branch, $protected-branches ]
-  merge_group:
-    branches: [ $default-branch, $protected-branches ]
-  push:
-    branches: [ $default-branch, $protected-branches ]
+on: [push]
 
 permissions:
   # Require writing security events to upload SARIF file to security tab
